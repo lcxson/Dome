@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<bady>
+      Cmd List
+      <hr>
+      <table border="1">
+            <tr>
+                  <th>ID</th>
+                  <th>StartAll</th>
+                  <th>StopAll</th>
+                  <th>StatusAll</th>
+            </tr>
+            <tr th:each="cmd : ${list}">
+                  <td th:text = "${cmd.cmd_id}"></td>
+                  <td th:text = "${cmd.start_shell}"></td>
+                  <td th:text = "${cmd.stop_shell}"></td>
+                  <td th:text = "${cmd.status_shell}"></td>
+            </tr>
+      </table>
+</bady>
+
+</html>
